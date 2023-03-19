@@ -34,7 +34,7 @@
 ![image](https://user-images.githubusercontent.com/48169929/226142435-51226b45-feba-4ca8-84a1-10a4306558d4.png)
 
 * We have plotted the efficient frontier, that is, risk (X) vs. return (Y).
-* At a certain point, taking on more risk doesn't increase your returns! This occurs at ~Risk = 0.006 which achieves a max return around 0.135% (0.00135). 
+* After a certain point, taking on more risk doesn't increase your returns! This occurs at ~Risk = *0.00055* which achieves a maximum return of around *0.132% (0.00132)*.
 * Any point on the efficient frontier represents an optimal allocation based on your risk tolerance.
 * From the Selected Portfolio Allocation, we can see that we have allocated 0.272% of the Portfolio to McDonald's Stock , 0.328% of the Portfolio to Autodesk Stock, and 0.40% of the Portfolio to Verisk Stock.
 
@@ -43,7 +43,7 @@
 * The MT strategy is based on the crossing points of the moving averages. 
 * For example if we considered the moving averages of 9 days and 21 days, buy operations are triggered when the 9-day moving average becomes larger than the 21-day moving average, and sell operations are triggered when the 21-day moving average becomes larger than the 9-day moving average. 
 * The goal is to identify good parameters for a momentum trading strategy tailored for a portfolio identified by the MPT model. 
-* We used 5 Momentum Trading Strategies:
+* We have considered 5 different pairs of moving averages for the selected portfolio:
 
   1. 9-Day/21-Day Moving Average Strategy
   2. 5-Day/13-Day Moving Average Strategy
@@ -68,4 +68,19 @@
    ![image](https://user-images.githubusercontent.com/48169929/226143360-1b813f3f-cdb3-47fa-a178-d0622453a962.png)
 #### Value of Each Position & Aggregate Value at the Beginning of Each Month (Momentum Trading Strategy)
 ![image](https://user-images.githubusercontent.com/48169929/226143386-0de6a792-2758-4943-b0ee-ab24d3130755.png)
-### Investing in S&P 500:
+## Comparing the stratagies:
+![image](https://user-images.githubusercontent.com/48169929/226146538-fbd1ded5-a195-464d-8766-c2032ea49eb7.png)
+* For the Buy_and_Hold strategy, the Aggregate Value of the investment on November 1st 2022 was **$93,253.**
+* For the Momentum Trading strategy, the Aggregate Value of the investment on November 1st 2022 was **$88,033.**
+* If we invested in S&P 500 index, the Aggregate Value of the investment on November 1st 2022 was **$90,356.**
+* Therefore, if we used the 'Buy & Hold Strategy' or the 'Momentum Trading Strategy' based on the chosen portfolio allocation, we would be losing money. If we invest in S&P 500 index, we would be losing about $10,000 approx.
+* So we can conclude that Buy_and_Hold strategy helps to retain the maximum value for investment of the 3 strategies.
+## Conclusion:
+* For the Portfolio Allocation Model, we have used binary constraints to ensure that we select one and only one stock from each sector.
+* Decreasing the max limit for risk and reducing the step size gave us good results as the data collected is on a daily basis (for 5 years). Using the parameter analysis, the optimal risk was chosen, and was used for further analysis.
+* We considered 5 different pairs of values of moving averages to determine the best Momentum Trading Strategy for each stock. The best strategy for each stock was decided based on the system return value for all the combinations.
+* Based on the analysis for 2022, we got to know that 'Buy and Hold' strategy worked better for the chosen portfolio on the whole when compared to Momentum Trading strategy.
+* Coming to the Individual stocks, for Verisk, the Momentum Trading Strategy worked better than Buy and Hold Strategy. For the other two stocks (McDonald's & Autodesk), Buy and Hold strategy worked better than Momentum Trading Strategy.
+* During the course of this project, we got to learn more about various terms in the stock market and how a strategy could be used to an investor's advantage.
+* Investment strategies play a vital role for investors; they can be goal-oriented and hence can help the investors make investment decisions based on their goals. The best investing strategies are the ones that have higher returns & lower risks. However, there is always a trade-off.
+* The obtained strategy may vary on several factors, including but not limited to, one’s investment goals such as short term or long term, asset sector considered, the timeframe considered, and the risk ceiling considered. 
