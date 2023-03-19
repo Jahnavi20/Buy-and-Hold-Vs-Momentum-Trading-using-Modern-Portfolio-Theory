@@ -1,4 +1,4 @@
-# Buy-and-Hold-Vs-Momentum-Trading-using-Modern-Portfolio-Theory
+# Comparison of Investment Strategies using Modern Portfolio Theory
 
 ## Objective:
 
