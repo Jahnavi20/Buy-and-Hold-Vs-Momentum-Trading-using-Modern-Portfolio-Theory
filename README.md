@@ -21,22 +21,22 @@
 ![image](https://user-images.githubusercontent.com/48169929/226130243-70a35d77-e509-4830-b31a-79da9f35b2e9.png)
 
 ## Optimization Model: Portfolio Allocation
-
-![image](https://user-images.githubusercontent.com/48169929/226142316-629c4ff7-18e6-4159-a3c8-c0422dc69d0d.png)
-
+### Optimal Stock Allocation:
 * We used Pyomo to build our Portfolio Allocation Model
 * Towards the lefthand side, we have lower risk and higher diversity.
 * Towards the righthand side, we have higher risk and lower diversity.
 * We have the optimal allocation of stocks corresponding to each risk level. 
 * For our analysis, we would be considering the risk value of 0.000205 and the corresponding stocks chosen are McDonald's, Autodesk and Verisk. 
 * This risk value has been chosen as these 3 stocks belong to 3 different sectors and their allocation proportion sums to 1 approximately.
+![image](https://user-images.githubusercontent.com/48169929/226142316-629c4ff7-18e6-4159-a3c8-c0422dc69d0d.png)
 
-![image](https://user-images.githubusercontent.com/48169929/226142435-51226b45-feba-4ca8-84a1-10a4306558d4.png)
-
+### The Efficient Frontier:
 * We have plotted the efficient frontier, that is, risk (X) vs. return (Y).
 * After a certain point, taking on more risk doesn't increase your returns! This occurs at ~Risk = *0.00055* which achieves a maximum return of around *0.132% (0.00132)*.
 * Any point on the efficient frontier represents an optimal allocation based on your risk tolerance.
 * From the Selected Portfolio Allocation, we can see that we have allocated 0.272% of the Portfolio to McDonald's Stock , 0.328% of the Portfolio to Autodesk Stock, and 0.40% of the Portfolio to Verisk Stock.
+![image](https://user-images.githubusercontent.com/48169929/226142435-51226b45-feba-4ca8-84a1-10a4306558d4.png)
+
 
 ## Momentum Trading:
 
@@ -69,12 +69,12 @@
 #### Value of Each Position & Aggregate Value at the Beginning of Each Month (Momentum Trading Strategy)
 ![image](https://user-images.githubusercontent.com/48169929/226143386-0de6a792-2758-4943-b0ee-ab24d3130755.png)
 ## Comparing the stratagies:
-![image](https://user-images.githubusercontent.com/48169929/226146538-fbd1ded5-a195-464d-8766-c2032ea49eb7.png)
 * For the Buy_and_Hold strategy, the Aggregate Value of the investment on November 1st 2022 was **$93,253.**
 * For the Momentum Trading strategy, the Aggregate Value of the investment on November 1st 2022 was **$88,033.**
 * If we invested in S&P 500 index, the Aggregate Value of the investment on November 1st 2022 was **$90,356.**
 * Therefore, if we used the 'Buy & Hold Strategy' or the 'Momentum Trading Strategy' based on the chosen portfolio allocation, we would be losing money. If we invest in S&P 500 index, we would be losing about $10,000 approx.
 * So we can conclude that Buy_and_Hold strategy helps to retain the maximum value for investment of the 3 strategies.
+![image](https://user-images.githubusercontent.com/48169929/226146538-fbd1ded5-a195-464d-8766-c2032ea49eb7.png)
 ## Conclusion:
 * For the Portfolio Allocation Model, we have used binary constraints to ensure that we select one and only one stock from each sector.
 * Decreasing the max limit for risk and reducing the step size gave us good results as the data collected is on a daily basis (for 5 years). Using the parameter analysis, the optimal risk was chosen, and was used for further analysis.
